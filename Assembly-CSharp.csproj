@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CA90E395-C931-B7CD-34A2-C3A6F8DD3737}</ProjectGuid>
+    <ProjectGuid>{D32A1C81-74DB-7169-E537-E86DC6519964}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,20 +62,21 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Project/Unity2018.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -279,13 +280,13 @@
       <HintPath>C:/Project/Unity2018.3.5f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Project/Unity2018.3.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
