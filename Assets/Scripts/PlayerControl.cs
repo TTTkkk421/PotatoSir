@@ -22,11 +22,20 @@ public class PlayerControl : MonoBehaviour
 
     bool isRight = true;//朝右方向（正方向）
 
+    Transform FirePlace;//开火的位置
+
+    public Rigidbody2D MissilePrefab;//导弹预制体
+
+    public float FireSpeed;//导弹发射速度
+
+    bool isFire = false;//是否在开火
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         groundcheck = transform.Find("GroundCheck");
+        FirePlace = transform.Find("bazooka/Fire");
     }
 
     void Update()
@@ -89,6 +98,16 @@ public class PlayerControl : MonoBehaviour
         {
             Jump();
         }
+
+        //开火
+        if (Input.GetKeyDown(KeyCode.F) && !isFire)
+        {
+            Fire();
+        }
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            isFire = false;
+        }
     }
 
     void ChangeScale()
@@ -102,5 +121,21 @@ public class PlayerControl : MonoBehaviour
     {
         rigidbody2D.AddForce(new Vector2(0f, JumpForce));
         isJump = false;
+    }
+
+    void Fire()
+    {
+        isFire = true;
+        Rigidbody2D missle =  Instantiate(MissilePrefab, FirePlace.position, Quaternion.identity);
+        missle.gravityScale = 0;
+        if (isRight)
+        {
+            missle.velocity = new Vector2(FireSpeed, 0);
+        }
+        else
+        {
+            missle.transform.localScale *= -1;
+            missle.velocity = new Vector2(-FireSpeed, 0);
+        }
     }
 }

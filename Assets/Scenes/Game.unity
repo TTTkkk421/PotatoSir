@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 75953526}
   m_Layer: 0
   m_Name: Foregrounds
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,6 +308,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &296637320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296637321}
+  m_Layer: 0
+  m_Name: Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &296637321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296637320}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.3958323, y: -0.14916688, z: 0}
+  m_LocalScale: {x: 4.1666656, y: 4.1666656, z: 4.1666656}
+  m_Children: []
+  m_Father: {fileID: 1670983199}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &361187108
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +540,7 @@ GameObject:
   - component: {fileID: 459114766}
   m_Layer: 0
   m_Name: env_UfoLegs
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -590,7 +620,7 @@ GameObject:
   - component: {fileID: 480254420}
   m_Layer: 8
   m_Name: env_PlatformTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1164,6 +1194,9 @@ MonoBehaviour:
   MoveForce: 50
   maxSpeed: 2
   JumpForce: 300
+  MissilePrefab: {fileID: 5031366763609401601, guid: b1ef8da5d520f974fb57304301cfcdc4,
+    type: 3}
+  FireSpeed: 10
 --- !u!1 &703393198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1210,7 @@ GameObject:
   - component: {fileID: 703393200}
   m_Layer: 0
   m_Name: env_TowerFull
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1280,11 +1313,11 @@ GameObject:
   m_Component:
   - component: {fileID: 787144773}
   - component: {fileID: 787144775}
-  - component: {fileID: 787144774}
   - component: {fileID: 787144776}
+  - component: {fileID: 787144774}
   m_Layer: 8
   m_Name: env_PlatformUfo_0
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1390,7 +1423,10 @@ PolygonCollider2D:
       - {x: -6.1749997, y: -0.375}
       - {x: -6.085, y: -0.445}
       - {x: -6.015, y: -0.475}
-      - {x: -5.9249997, y: -0.505}
+      - {x: 0.029842628, y: -0.8901435}
+      - {x: 5.7938313, y: -0.39361995}
+      - {x: 0.028144322, y: -0.94661534}
+      - {x: -4.21498, y: -0.6355302}
       - {x: -5.845, y: -0.525}
       - {x: -5.475, y: -0.59499997}
       - {x: -5.325, y: -0.615}
@@ -1399,7 +1435,7 @@ PolygonCollider2D:
       - {x: -4.6349998, y: -0.685}
       - {x: -4.435, y: -0.695}
       - {x: -4.165, y: -0.72499996}
-      - {x: -3.675, y: -0.775}
+      - {x: -2.1066606, y: -0.8887232}
       - {x: -3.205, y: -0.815}
       - {x: -2.7849998, y: -0.84499997}
       - {x: -2.465, y: -0.865}
@@ -1729,7 +1765,7 @@ GameObject:
   - component: {fileID: 1186271257}
   m_Layer: 0
   m_Name: env_TowerFull (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1944,7 +1980,7 @@ GameObject:
   - component: {fileID: 1532096831}
   m_Layer: 8
   m_Name: env_PlatformBridge (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2050,7 +2086,7 @@ GameObject:
   - component: {fileID: 1620760412}
   m_Layer: 8
   m_Name: env_PlatformTop (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2170,7 +2206,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.225, y: 0.343, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_Children: []
+  m_Children:
+  - {fileID: 296637321}
   m_Father: {fileID: 620769037}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2630,7 +2667,7 @@ GameObject:
   - component: {fileID: 2082247158}
   m_Layer: 8
   m_Name: env_PlatformBridge
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

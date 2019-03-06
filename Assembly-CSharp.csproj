@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Missle.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/UniversityWork/Unity_study/U_S_PotatoSir/PotatoSir/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
