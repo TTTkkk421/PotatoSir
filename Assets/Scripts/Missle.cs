@@ -12,7 +12,7 @@ public class Missle : MonoBehaviour
 
     Rigidbody2D missile_rig;//导弹刚体
 
-    private void Start()
+    private void Awake()
     {
         boomanim = transform.Find("Boom").gameObject;
         animator = GetComponent<Animator>();

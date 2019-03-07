@@ -47,6 +47,7 @@ public class PlayerControl : MonoBehaviour
         if (h > 0)
         {
             isRight = true;
+            animator.SetBool("Run", true);
             if (transform.localScale.x < 0)
             {
                 ChangeScale();
@@ -55,15 +56,21 @@ public class PlayerControl : MonoBehaviour
         if (h < 0)
         {
             isRight = false;
+            animator.SetBool("Run", true);
             if (transform.localScale.x > 0)
             {
                 ChangeScale();
             }
         }
+        if (h == 0)
+        {
+            animator.SetBool("Run", false);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && !isJump && Grounded)
         {
             isJump = true;
+            animator.SetBool("Jump", true);
         }
     }
 
@@ -121,6 +128,7 @@ public class PlayerControl : MonoBehaviour
     {
         rigidbody2D.AddForce(new Vector2(0f, JumpForce));
         isJump = false;
+        animator.SetBool("Jump", false);
     }
 
     void Fire()
@@ -128,6 +136,7 @@ public class PlayerControl : MonoBehaviour
         isFire = true;
         Rigidbody2D missle =  Instantiate(MissilePrefab, FirePlace.position, Quaternion.identity);
         missle.gravityScale = 0;
+        animator.SetTrigger("Shoot");
         if (isRight)
         {
             missle.velocity = new Vector2(FireSpeed, 0);
