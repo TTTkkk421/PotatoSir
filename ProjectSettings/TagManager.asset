@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Missle
   - Wall
+  - Enemy
   layers:
   - Default
   - TransparentFX
