@@ -6,7 +6,7 @@ public class PlayerControl : MonoBehaviour
 {
     Animator animator;//控制角色动画
 
-    Rigidbody2D rigidbody2D;//角色刚体
+    private new Rigidbody2D rigidbody2D;//角色刚体
 
     public float MoveForce;//移动的力
 
@@ -30,7 +30,7 @@ public class PlayerControl : MonoBehaviour
 
     bool isFire = false;//是否在开火
 
-    void Start()
+    void Awake()
     {
         animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();

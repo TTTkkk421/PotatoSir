@@ -12,6 +12,8 @@ public class Missle : MonoBehaviour
 
     Rigidbody2D missile_rig;//导弹刚体
 
+    public int Damage = 10;//伤害量
+
     private void Awake()
     {
         boomanim = transform.Find("Boom").gameObject;
@@ -24,17 +26,29 @@ public class Missle : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            missile_rig.velocity = new Vector2(0, 0);
-            MissleModel.SetActive(false);
-            boomanim.SetActive(true);
-            animator.Play("Boom");
-            Invoke("Destroy", 0.5f);
+            Boom_Anim();
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Boom_Anim();
+            Enemy enemy = collision.GetComponent<Enemy>();
+            enemy.TakeDamage(Damage);
         }
     }
 
     private void Destroy()
     {
         Destroy(gameObject);
+    }
+
+    //爆炸动画
+    void Boom_Anim()
+    {
+        missile_rig.velocity = new Vector2(0, 0);
+        MissleModel.SetActive(false);
+        boomanim.SetActive(true);
+        animator.Play("Boom");
+        Invoke("Destroy", 0.5f);
     }
 
 }
