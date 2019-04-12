@@ -45,6 +45,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         rig_Enemy = GetComponent<Rigidbody2D>();
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        Invoke("Destroy", 10f);
     }
 
     private void FixedUpdate()

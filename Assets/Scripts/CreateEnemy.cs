@@ -40,7 +40,6 @@ public class CreateEnemy : MonoBehaviour
     void createenemy()
     {
         float Num = Random.Range(0f, 2f);
-        Debug.Log(Num);
         int Index = 0;
         if (Num >= 0.5f)
         {
